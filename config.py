@@ -14,7 +14,7 @@ def _required(name: str) -> str:
 
 class Settings:
     BOT_TOKEN = _required("BOT_TOKEN")
-    DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data.db")
+    DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/data.db")
     AI_PROVIDER = os.getenv("AI_PROVIDER", "")
     AI_API_KEY = os.getenv("AI_API_KEY", "")
     AI_MODEL = os.getenv("AI_MODEL", "")
